@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Questions</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="loadContainer">
+        <h1 id="specialtyTitle"></h1>
+        
+        <div class="topicsSection">
+            <h2>Select Topics:</h2>
+            <div id="topicsCheckboxes"></div>
+        </div>
+
+        <div class="lengthSection">
+            <h2>Number of Questions:</h2>
+            <select id="questionCount">
+                <option value="10">10 questions</option>
+                <option value="20">20 questions</option>
+                <option value="30">30 questions</option>
+                <option value="all">All questions</option>
+            </select>
+        </div>
+
+        <button class="nav-button" onclick="startQuiz()">Start Quiz</button>
+        <button class="nav-button" onclick="goBack()">Back</button>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="loadQuestions.js"></script>
+</body>
+</html>
